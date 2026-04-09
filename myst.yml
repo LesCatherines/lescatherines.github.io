@@ -9,8 +9,7 @@ project:
   toc:
     - file: index
     - file: about
-    - file: services
-    - file: faq
+    - file: events
     - file: testimonials
     - file: contact
 
