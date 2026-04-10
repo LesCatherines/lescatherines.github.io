@@ -5,12 +5,12 @@ project:
   id: 5c919598-ad6e-4dc7-a5be-858a8fd6d0b0
   title: Les Catherines
   description: Acoustic trio. 
-  thumbnail: ./images/The-Cat-Nanny-logo.png
+  thumbnail: ./images/The-Catherines-logo.png
   toc:
     - file: index
     - file: about
     - file: events
-    - file: media
+    - file: openmic
     - file: testimonials
     - file: contact
 
