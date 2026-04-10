@@ -7,7 +7,7 @@
    "source": [
     "# Les Catherines\n",
     "\n",
-    "*Acoustic music • Multilingual • Live performance*\n",
+    "*Acoustic music • Open mic • Community*\n",
     "\n",
     "Les Catherines are a trio blending the warm sounds of acoustic instruments with a rich mix of languages—English, French, Spanish, and more. Inspired by world music and soulful interpretations, their eclectic style creates a captivating, multicultural listening experience."
    ]
@@ -22,24 +22,17 @@
   },
   {
    "cell_type": "markdown",
-   "id": "music-vibe",
+   "id": "next-event",
    "metadata": {},
    "source": [
-    "## Our Music\n",
+    "## Next Event\n",
     "\n",
-    "From intimate acoustic arrangements to vibrant multilingual interpretations, our music blends styles, cultures, and voices. Each performance is an invitation to travel—across languages, emotions, and musical traditions."
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "events-light",
-   "metadata": {},
-   "source": [
-    "## Live\n",
+    "**Friday, June 5 • 6–8 PM**  \n",
+    "**CBArt Studios, Superior, Colorado**\n",
     "\n",
-    "We perform regularly in the Boulder area and host community music gatherings.\n",
+    "Come early, enjoy the art, and stay for a full evening of music and community.\n",
     "\n",
-    "[See upcoming events →](events)"
+    "[See all events →](events)"
    ]
   },
   {
@@ -49,7 +42,7 @@
    "source": [
     "## A Musical Community\n",
     "\n",
-    "Beyond performances, we love creating spaces where music feels shared and alive—where musicians and listeners connect in a warm, welcoming atmosphere."
+    "Our open mic is more than a performance—it is a gathering. A place where musicians share, listen, and create something special together. We keep it warm, welcoming, and just a little magical."
    ]
   },
   {
