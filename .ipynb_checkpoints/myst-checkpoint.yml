@@ -10,8 +10,6 @@ project:
     - file: index
     - file: about
     - file: events
-    - file: openmic
-    - file: testimonials
     - file: contact
 
 site:

@@ -10,8 +10,6 @@ project:
     - file: index
     - file: about
     - file: events
-    - file: community
-    - file: testimonials
     - file: contact
 
 site:
