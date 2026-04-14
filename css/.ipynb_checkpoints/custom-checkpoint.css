@@ -359,11 +359,10 @@ a.button:hover {
 
 
 .card {
-  background: #f7f3ec;
+  background: transparent;
   border: 1px solid #e2dbd2;
-  border-radius: 16px;
+  border-radius: 14px;
   padding: 0.9rem 1.1rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.035);
   margin: 0.9rem 0;
 }
 
