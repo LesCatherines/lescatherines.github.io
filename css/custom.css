@@ -132,13 +132,16 @@ ul li::marker {
    ========================================================= */
 
 a {
+  color: #355c7d;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #243b53;
+  border-bottom-color: currentColor;
 }
-
 /* =========================================================
    TESTIMONIALS (FINAL, TIGHT, CONTROLLED)
    ========================================================= */
