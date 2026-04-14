@@ -163,16 +163,18 @@ html body blockquote * {
 
 /* Build clean testimonial */
 html body blockquote {
-  margin: 1rem 0 0.25rem 0 !important;
-  padding: 0.35rem 0.55rem !important;
-  border-left: 3px solid #e5e7eb !important;
-  border-radius: 4px !important;
+  margin: 1.2rem 0 0.3rem 0 !important;
+  padding: 0.9rem 1rem !important;
+  border-left: 4px solid #355c7d !important;
+  border-radius: 12px !important;
+  background: #f5f1ea !important;
 }
 
 html body blockquote p {
   font-style: italic !important;
-  line-height: 1.45 !important;
-  font-size: 1.02rem !important;
+  line-height: 1.5 !important;
+  font-size: 1.03rem !important;
+  color: #334155 !important;
 }
 
 /* Attribution */
