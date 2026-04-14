@@ -91,15 +91,18 @@ aside.myst-sidebar-left a {
 
 /* Section headers */
 .myst-content h2 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-top: 2.2rem;
-  margin-bottom: 0.7rem;
+  font-size: 1.75rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: #2c435e;
+  margin-top: 2.6rem;
+  margin-bottom: 0.8rem;
 }
 
 .myst-content h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 650;
+  color: #334e68;
 }
 
 /* Divider */
