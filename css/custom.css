@@ -357,13 +357,14 @@ a.button:hover {
    CARDS
    ========================================================= */
 
+
 .card {
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid #e7e1d8;
+  background: #f7f3ec;
+  border: 1px solid #e2dbd2;
   border-radius: 16px;
-  padding: 1.25rem 1.4rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-  margin: 1.2rem 0;
+  padding: 0.9rem 1.1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.035);
+  margin: 0.9rem 0;
 }
 
 /* =========================================================
