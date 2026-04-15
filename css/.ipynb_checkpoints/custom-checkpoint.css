@@ -3,19 +3,28 @@
    ========================================================= */
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   background: #faf8f4;
   color: #24303f;
   line-height: 1.65;
 }
+
 /* Main content width (editorial, not docs) */
 .myst-content {
   max-width: 980px !important;
 }
 
+
 /* =========================================================
-   HEADER CLEANUP (remove MyST branding)
+   HEADER CLEANUP
    ========================================================= */
 
 /* Hide "Made with MyST" badge */
@@ -23,7 +32,7 @@ span.tracking-tight.sm\:mr-5 {
   display: none !important;
 }
 
-/* Remove any announcement bars */
+/* Remove announcement/header bars */
 .myst-banner,
 .myst-topbar,
 .myst-announcement {
@@ -34,6 +43,7 @@ span.tracking-tight.sm\:mr-5 {
 header {
   padding-top: 0 !important;
 }
+
 
 /* =========================================================
    NAVIGATION
@@ -48,45 +58,26 @@ aside.myst-sidebar-left a {
   font-weight: 500;
 }
 
-/* Remove RIGHT page outline ("Contents") only */
+/* Remove right page outline ("Contents") */
 .myst-outline,
 .myst-outline-header {
   display: none !important;
 }
 
+
 /* =========================================================
-   HEADINGS & SPACING (CLEAN + PREDICTABLE)
+   HEADINGS
    ========================================================= */
 
 /* Page title */
-.myst-content h1 {
+.myst-content h1,
+.prose h1,
+.myst-content .prose h1 {
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: #1f2a37;
   margin-bottom: 0.25rem !important;
-}
-
-/* =========================================================
-   Ultra-tight spacing after H1
-   ========================================================= */
-
-/* H1 itself */
-.myst-content h1 {
-  margin-bottom: 0.25rem !important;
-}
-
-/* Section wrapper around H1 */
-.myst-content section:has(> h1) {
-  margin-bottom: 0.35rem !important;
-  padding-bottom: 0 !important;
-}
-
-/* First element after H1 */
-.myst-content h1 + p,
-.myst-content h1 + h2,
-.myst-content h1 + hr {
-  margin-top: 0.15rem !important;
 }
 
 /* Section headers */
@@ -104,12 +95,103 @@ aside.myst-sidebar-left a {
   color: #334e68;
 }
 
-/* Divider */
+/* Small inline heading polish */
+h1 img,
+h2 img {
+  margin-right: 0.4rem;
+}
+
+
+/* =========================================================
+   H1 / PAGE TITLE SPACING
+   ========================================================= */
+
+/* Section wrapper around H1 */
+.myst-content section:has(> h1) {
+  margin-bottom: 0.35rem !important;
+  padding-bottom: 0 !important;
+}
+
+/* First element after H1 */
+.myst-content h1 + p,
+.myst-content h1 + h2,
+.myst-content h1 + hr {
+  margin-top: 0.15rem !important;
+}
+
+/* Tighten first paragraph after H1 when no hr */
+.prose h1 + p,
+.myst-content h1 + p {
+  margin-top: 0.25rem !important;
+}
+
+/* Tighten hr directly after H1 */
+.prose h1 + hr,
+.myst-content h1 + hr {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* Tighten spacing before H2 after hr */
+.prose hr + h2,
+.myst-content hr + h2 {
+  margin-top: 0.6rem !important;
+}
+
+
+/* =========================================================
+   MyST FRONTMATTER TITLE SPACING
+   ========================================================= */
+
+/* Title block itself */
+.myst-fm-block-title,
+h1.myst-fm-block-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Element immediately after title */
+.myst-fm-block-title + * {
+  margin-top: 0.4rem !important;
+}
+
+h1.myst-fm-block-title + * {
+  margin-top: 0.15rem !important;
+  padding-top: 0 !important;
+}
+
+/* Special case: hr after title */
+.myst-fm-block-title + hr,
+h1.myst-fm-block-title + hr,
+.myst-content hr {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Special case: h2 after title */
+.myst-fm-block-title + h2 {
+  margin-top: 0.5rem !important;
+}
+
+/* If title sits in a flex/grid stack with gap, remove it */
+*:has(> h1.myst-fm-block-title) {
+  row-gap: 0 !important;
+  gap: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   DIVIDERS
+   ========================================================= */
+
 hr {
   border: none;
   border-top: 1px solid #ddd6cc;
   margin: 2.4rem 0;
 }
+
 
 /* =========================================================
    TEXT & LISTS
@@ -131,6 +213,7 @@ ul li::marker {
   color: #9ca3af;
 }
 
+
 /* =========================================================
    LINKS
    ========================================================= */
@@ -139,15 +222,19 @@ a {
   color: #355c7d;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 a:hover {
   color: #243b53;
   border-bottom-color: currentColor;
 }
+
+
 /* =========================================================
-   TESTIMONIALS (FINAL, TIGHT, CONTROLLED)
+   TESTIMONIALS
    ========================================================= */
 
 /* Reset any theme styling */
@@ -176,7 +263,7 @@ html body blockquote p {
   color: #334155 !important;
 }
 
-/* Attribution */
+/* Attribution paragraph after testimonial */
 html body blockquote + p {
   margin-top: 0.15rem !important;
   margin-bottom: 0.9rem !important;
@@ -185,114 +272,6 @@ html body blockquote + p {
   color: #555 !important;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-footer {
-  font-size: 0.9rem;
-  color: #6b7280;
-}
-
-footer .myst-footer-branding {
-  opacity: 0.6;
-  font-size: 0.85rem;
-}
-
-/* =========================================================
-   SMALL POLISH
-   ========================================================= */
-
-h1 img,
-h2 img {
-  margin-right: 0.4rem;
-}
-
-/* =========================================================
-   FORCE tighter space after H1 in MyST (wins vs Tailwind prose)
-   ========================================================= */
-
-/* Override Tailwind typography/prose heading spacing */
-.prose h1,
-.myst-content .prose h1,
-.myst-content h1 {
-  margin-bottom: 0.25rem !important;
-}
-
-/* If you have an underline line "____" (renders as <hr>), THIS is the big gap */
-.prose h1 + hr,
-.myst-content h1 + hr {
-  margin-top: 0.2rem !important;
-  margin-bottom: 0.6rem !important;
-}
-
-/* Tighten spacing before the next section title right after the hr */
-.prose hr + h2,
-.myst-content hr + h2 {
-  margin-top: 0.6rem !important;
-}
-
-/* Also tighten first paragraph after H1 (when there isn't an hr) */
-.prose h1 + p,
-.myst-content h1 + p {
-  margin-top: 0.25rem !important;
-}
-
-/* =========================================================
-   Fix spacing after MyST page title (real fix)
-   ========================================================= */
-
-/* The title itself already has mb-0, keep it explicit */
-.myst-fm-block-title {
-  margin-bottom: 0 !important;
-}
-
-/* The spacing comes from the container BELOW the title */
-.myst-fm-block-title + * {
-  margin-top: 0.4rem !important;
-}
-
-/* If the next thing is a divider created by ____ */
-.myst-fm-block-title + hr {
-  margin-top: 0.3rem !important;
-  margin-bottom: 0.6rem !important;
-}
-
-/* If the next thing is a section heading */
-.myst-fm-block-title + h2 {
-  margin-top: 0.5rem !important;
-}
-
-/* =========================================================
-   Fix space after MyST page title (container gap/padding)
-   ========================================================= */
-
-/* If the title lives in a flex/grid stack with GAP, kill that gap */
-*:has(> h1.myst-fm-block-title) {
-  row-gap: 0 !important;
-  gap: 0 !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Tighten spacing immediately after the title block */
-h1.myst-fm-block-title {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Tighten the element that follows the title block */
-h1.myst-fm-block-title + * {
-  margin-top: 0.15rem !important;
-  padding-top: 0 !important;
-}
-
-/* If you use ____ (hr) under the title, shrink hr margins */
-h1.myst-fm-block-title + hr,
-.myst-content hr {
-  margin-top: 0.2rem !important;
-  margin-bottom: 0.5rem !important;
-}
 
 /* =========================================================
    ABOUT PAGE IMAGES + RESPONSIVE GRID
@@ -306,25 +285,23 @@ h1.myst-fm-block-title + hr,
   border-radius: 10px;
 }
 
-/* Two columns on larger screens */
 .responsive-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
-/* One column on phones */
 @media (max-width: 768px) {
   .responsive-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Optional: center the image on small screens */
   .about-photo {
     display: block;
     margin: 0 auto;
   }
 }
+
 
 /* =========================================================
    BUTTONS
@@ -341,7 +318,10 @@ a.button {
   text-decoration: none !important;
   border: none;
   box-shadow: 0 6px 18px rgba(53, 92, 125, 0.18);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
 }
 
 .button:hover,
@@ -352,10 +332,10 @@ a.button:hover {
   border-bottom-color: transparent !important;
 }
 
+
 /* =========================================================
    CARDS
    ========================================================= */
-
 
 .card {
   background: transparent;
@@ -380,6 +360,7 @@ a.button:hover {
   padding: 0;
 }
 
+
 /* =========================================================
    HERO
    ========================================================= */
@@ -394,4 +375,19 @@ a.button:hover {
   color: #5b6673;
   max-width: 700px;
   margin: 0.7rem auto 1.2rem auto;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+footer .myst-footer-branding {
+  opacity: 0.6;
+  font-size: 0.85rem;
 }
