@@ -337,30 +337,45 @@ a.button:hover {
    CARDS
    ========================================================= */
 
-.card {
-  background: transparent;
-  border: 1px solid #e2dbd2;
-  border-radius: 14px;
-  padding: 0.9rem 1.1rem;
-  margin: 0.9rem 0;
-}
+/* =========================================================
+   CARD — ULTRA TIGHT
+   ========================================================= */
 
-.event-card:hover {
-  transform: none;
-  box-shadow: none;
-}
 .sd-card {
-  padding: 6px 10px;
-  margin-bottom: 8px;
+  padding: 4px 10px !important;   /* very tight */
+  margin: 6px 0 !important;
+  border-radius: 10px;
 }
 
+/* Remove ALL internal padding layers */
+.sd-card-body,
+.sd-card-body > div {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Kill spacing before FIRST element */
+.sd-card-body > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Kill spacing after LAST element */
+.sd-card-body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Headings inside cards */
 .sd-card h3 {
-  margin: 0.2rem 0 0.4rem 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2;
 }
 
+/* Paragraphs / lists inside cards */
 .sd-card p,
 .sd-card ul {
-  margin: 0.2rem 0;
+  margin: 0.2rem 0 !important;
 }
 /* =========================================================
    HERO
