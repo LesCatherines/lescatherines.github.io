@@ -349,18 +349,19 @@ a.button:hover {
   transform: none;
   box-shadow: none;
 }
-
 .sd-card {
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
 }
 
-.sd-card-body {
-  padding: 0;
+.sd-card h3 {
+  margin: 0.2rem 0 0.4rem 0 !important;
 }
 
-
+.sd-card p,
+.sd-card ul {
+  margin: 0.2rem 0;
+}
 /* =========================================================
    HERO
    ========================================================= */
