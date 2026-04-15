@@ -91,12 +91,11 @@ aside.myst-sidebar-left a {
 
 /* Section headers */
 .myst-content h2 {
-  font-size: 1.75rem;
-  font-weight: 650;
-  letter-spacing: -0.01em;
-  color: #2c435e;
-  margin-top: 2.6rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.7rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .myst-content h3 {
@@ -369,6 +368,16 @@ a.button:hover {
 .event-card:hover {
   transform: none;
   box-shadow: none;
+}
+
+.sd-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.sd-card-body {
+  padding: 0;
 }
 
 /* =========================================================
