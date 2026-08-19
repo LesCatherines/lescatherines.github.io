@@ -22,6 +22,7 @@ body {
   max-width: 980px !important;
 }
 
+
 /* =========================================================
    HEADER CLEANUP
    ========================================================= */
@@ -43,6 +44,7 @@ header {
   padding-top: 0 !important;
 }
 
+
 /* =========================================================
    NAVIGATION
    ========================================================= */
@@ -61,6 +63,7 @@ aside.myst-sidebar-left a {
 .myst-outline-header {
   display: none !important;
 }
+
 
 /* =========================================================
    HEADINGS
@@ -301,35 +304,6 @@ html body blockquote + p {
 
 
 /* =========================================================
-   PERFORMANCES GRID
-   ========================================================= */
-
-.performances-grid {
-  display: grid;
-  grid-template-columns: 5fr 7fr;
-  align-items: center;
-}
-
-/* Let performance photo use the wider column */
-.performances-grid .about-photo {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-
-/* Stack text and photo on smaller screens */
-@media (max-width: 768px) {
-  .performances-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .performances-grid .about-photo {
-    margin: 0 auto;
-  }
-}
-
-
-/* =========================================================
    BUTTONS
    ========================================================= */
 
@@ -368,7 +342,7 @@ a.button:hover {
    ========================================================= */
 
 .sd-card {
-  padding: 4px 10px !important;
+  padding: 4px 10px !important;   /* very tight */
   margin: 6px 0 !important;
   border-radius: 10px;
 }
@@ -403,8 +377,6 @@ a.button:hover {
 .sd-card ul {
   margin: 0.2rem 0 !important;
 }
-
-
 /* =========================================================
    HERO
    ========================================================= */
