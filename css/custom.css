@@ -452,3 +452,13 @@ aside.myst-sidebar-left a[href*="openmic"] {
   border-top: 1px solid #cccccc !important;
   padding-top: 0.9rem !important;
 }
+
+/* Add COMMUNITY MUSIC above the Open Mic label */
+aside.myst-sidebar-left a[href*="openmic"]::before {
+  content: "COMMUNITY MUSIC";
+  display: block;
+  font-weight: 700 !important;
+  color: #355c7d;
+  margin-left: -1rem;
+  margin-bottom: 0.75rem;
+}
