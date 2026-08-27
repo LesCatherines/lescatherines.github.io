@@ -435,21 +435,27 @@ footer .myst-footer-branding {
   opacity: 0.6;
   font-size: 0.85rem;
 }
-
 /* =========================================================
    COMMUNITY MUSIC NAVIGATION
    ========================================================= */
 
-/* COMMUNITY MUSIC: section heading + divider above */
-nav a[href$="/openmic/"] {
-    border-top: 1px solid #cccccc;
-    margin-top: 0.75rem;
-    padding-top: 0.75rem;
+/* COMMUNITY MUSIC */
+nav a[href*="openmic"]:not([href*="openmic-1"]) {
+    font-weight: 700 !important;
+    border-top: 1px solid #cccccc !important;
+    margin-top: 0.75rem !important;
+    padding-top: 0.75rem !important;
+    display: block;
+    width: 100%;
+}
+
+/* Make sure any text element inside the link is also bold */
+nav a[href*="openmic"]:not([href*="openmic-1"]) * {
     font-weight: 700 !important;
 }
 
-/* CBArt Studios Open Mic: no divider */
-nav a[href$="/openmic-1/"] {
+/* CBArt Studios Open Mic — no separator */
+nav a[href*="openmic-1"] {
     border-top: none !important;
     margin-top: 0 !important;
     padding-top: 0 !important;
