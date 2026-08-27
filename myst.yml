@@ -12,10 +12,8 @@ project:
     - file: performances
     - file: contact
     - file: openmic
-
-    - file:  openmic
     title: COMMUNITY MUSIC
-     - file: openmic
+    - file: openmic
     title: CBArt Studios Open Mic
      
 site:
