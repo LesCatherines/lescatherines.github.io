@@ -9,7 +9,8 @@ project:
   toc:
     - file: index
     - file: about
-    - file: events
+    - file: performances
+    - file: openmic
     - file: contact
 
 site:
