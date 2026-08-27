@@ -13,7 +13,9 @@ project:
     - file: performances
       title: Live Performances
     - file: contact
-      title: Stay Connected   
+      title: Stay Connected 
+    - file: openmic
+      title: COMMUNITY MUSIC      
     - file: openmic
       title: CBart Studios Open Mic
 site:
