@@ -10,8 +10,8 @@ project:
     - file: index
     - file: about
     - file: performances
-    - file: openmic
     - file: contact
+    - file: openmic
 
 site:
   template: book-theme
