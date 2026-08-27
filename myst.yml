@@ -9,8 +9,11 @@ project:
   toc:
     - file: index
     - file: about
+      title: About us
     - file: performances
+      title: Live Performances
     - file: contact
+      title: Stay Connected   
     - file: openmic
       title: COMMUNITY MUSIC
     - file: openmic
