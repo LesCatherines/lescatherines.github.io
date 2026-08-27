@@ -485,3 +485,32 @@ aside.myst-sidebar-left a[href*="openmic"]::before {
   padding-top: 0.75rem;
   border-top: 1px solid #d1d5db;
 }
+
+
+/* Bold "LES CATHERINES" label above the About link */
+.myst-primary-sidebar-toc a[href="/about"] {
+  margin-top: 1.5rem;
+}
+.myst-primary-sidebar-toc a[href="/about"]::before {
+  content: "LES CATHERINES";
+  display: block;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 0.5rem 0.25rem;
+}
+
+/* Bold "COMMUNITY MUSIC" label + divider above the Open Mic link */
+.myst-primary-sidebar-toc a[href="/openmic"] {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d1d5db;
+}
+.myst-primary-sidebar-toc a[href="/openmic"]::before {
+  content: "COMMUNITY MUSIC";
+  display: block;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem 0.25rem;
+}
