@@ -16,6 +16,7 @@ project:
     - file: contact
       title: Stay connected  
     - file: openmic
+      title: CBArt Studios Open Mic
 
       
 site:
