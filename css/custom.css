@@ -435,17 +435,23 @@ footer .myst-footer-branding {
    SIDEBAR SECTION HEADERS
    ========================================================= */
 
+/* Hide the site's own Home link in the sidebar — it's labeled
+   "LES CATHERINES" too, which duplicated our injected header */
+nav[aria-label="Table of Contents"] a[href="/"] {
+  display: none;
+}
+
 /* Bold "LES CATHERINES" label above the About link */
 nav[aria-label="Table of Contents"] a[href="/about"] {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 nav[aria-label="Table of Contents"] a[href="/about"]::before {
   content: "LES CATHERINES";
   display: block;
   font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  padding: 0.5rem 0.5rem 0.25rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 0.5rem 0.4rem;
 }
 
 /* Bold "COMMUNITY MUSIC" label + divider above the Open Mic link */
@@ -458,7 +464,7 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
   content: "COMMUNITY MUSIC";
   display: block;
   font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  padding: 0.25rem 0.5rem 0.25rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.5rem 0.4rem;
 }
