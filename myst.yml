@@ -9,15 +9,10 @@ project:
 
   toc:
     - file: index
-    - title: Les Catherines
-      children:
-        - file: about
-        - file: performances
-        - file: contact
-    - title: Community Music
-      children:
-        - file: openmic    
-
+    - file: about
+    - file: performances
+    - file: contact
+    - file: openmic
 
       
 site:
