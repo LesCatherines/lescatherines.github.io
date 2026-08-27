@@ -13,8 +13,6 @@ project:
     - file: contact
     - file: openmic
     title: COMMUNITY MUSIC
-    - file: openmic
-    title: CBArt Studios Open Mic
      
 site:
   template: book-theme
