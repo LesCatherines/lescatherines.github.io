@@ -6,16 +6,20 @@ project:
   title: LES CATHERINES
   description: Acoustic trio. 
   thumbnail: ./images/The-Catherines-logo.png
+
   toc:
     - file: index
-    - file: about
-      title: About us
-    - file: performances
-      title: Live Performances
-    - file: contact
-      title: Stay Connected 
-    - file: openmic
-      title: CBArt Studios Open Mic
+    - title: Les Catherines
+      children:
+        - file: about
+        - file: performances
+        - file: contact
+    - title: Community Music
+      children:
+        - file: openmic    
+
+
+      
 site:
   template: book-theme
   url: https://lescatherines.github.io
