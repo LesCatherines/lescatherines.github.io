@@ -437,32 +437,18 @@ footer .myst-footer-branding {
    COMMUNITY MUSIC NAVIGATION
    ========================================================= */
 
-/* Indent the normal band navigation links */
+/* Indent the actual page links */
 aside.myst-sidebar-left a[href*="about"],
 aside.myst-sidebar-left a[href*="performances"],
 aside.myst-sidebar-left a[href*="contact"],
-aside.myst-sidebar-left a[href*="openmic-1"] {
-  padding-left: 0.8rem !important;
+aside.myst-sidebar-left a[href*="openmic"] {
+  padding-left: 1rem !important;
 }
 
-/* Start a new section at the Open Mic item */
-aside.myst-sidebar-left li:has(a[href*="openmic-1"]) {
+/* Open Mic starts a new section */
+aside.myst-sidebar-left a[href*="openmic"] {
+  display: block !important;
+  margin-top: 1.2rem !important;
   border-top: 1px solid #cccccc !important;
-  margin-top: 1rem !important;
   padding-top: 0.9rem !important;
-}
-
-/* Add the non-clickable COMMUNITY MUSIC heading */
-aside.myst-sidebar-left li:has(a[href*="openmic-1"])::before {
-  content: "COMMUNITY MUSIC";
-  display: block;
-  font-weight: 700;
-  color: #355c7d;
-  margin-bottom: 0.55rem;
-  padding-left: 0 !important;
-}
-
-/* Open Mic itself stays normal weight */
-aside.myst-sidebar-left a[href*="openmic-1"] {
-  font-weight: 500 !important;
 }
