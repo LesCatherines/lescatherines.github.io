@@ -361,10 +361,6 @@ a.button:hover {
    CARDS
    ========================================================= */
 
-/* =========================================================
-   CARD — ULTRA TIGHT
-   ========================================================= */
-
 .sd-card {
   padding: 4px 10px !important;
   margin: 6px 0 !important;
@@ -433,65 +429,17 @@ footer .myst-footer-branding {
   opacity: 0.6;
   font-size: 0.85rem;
 }
+
+
 /* =========================================================
-   COMMUNITY MUSIC NAVIGATION
+   SIDEBAR SECTION HEADERS
    ========================================================= */
 
-/* Indent the actual page links */
-aside.myst-sidebar-left a[href*="about"],
-aside.myst-sidebar-left a[href*="performances"],
-aside.myst-sidebar-left a[href*="contact"],
-aside.myst-sidebar-left a[href*="openmic"] {
-  padding-left: 1rem !important;
-}
-
-/* Open Mic starts a new section */
-aside.myst-sidebar-left a[href*="openmic"] {
-  display: block !important;
-  margin-top: 1.2rem !important;
-  border-top: 1px solid #cccccc !important;
-  padding-top: 0.9rem !important;
-}
-
-/* Add COMMUNITY MUSIC above the Open Mic label */
-aside.myst-sidebar-left a[href*="openmic"]::before {
-  content: "COMMUNITY MUSIC";
-  display: block;
-  font-weight: 700 !important;
-  color: #355c7d;
-  margin-left: -1rem;
-  margin-bottom: 0.75rem;
-}
-
-
-/* Sidebar: bold the section group labels (Les Catherines / Community Music) */
-.myst-primary-sidebar-toc div[title] {
-  font-weight: 700;
-}
-
-/* Sidebar: always show each section's pages, no click needed */
-.myst-primary-sidebar-toc .collapsible-content {
-  display: block !important;
-}
-
-/* Sidebar: hide the now-unnecessary expand/collapse arrow */
-.myst-primary-sidebar-toc button[aria-label="Open Folder"] {
-  display: none;
-}
-
-/* Sidebar: divider line between the two sections */
-.myst-primary-sidebar-toc .myst-toc > div.w-full:nth-of-type(2) {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid #d1d5db;
-}
-
-
 /* Bold "LES CATHERINES" label above the About link */
-.myst-primary-sidebar-toc a[href="/about"] {
+nav[aria-label="Table of Contents"] a[href="/about"] {
   margin-top: 1.5rem;
 }
-.myst-primary-sidebar-toc a[href="/about"]::before {
+nav[aria-label="Table of Contents"] a[href="/about"]::before {
   content: "LES CATHERINES";
   display: block;
   font-weight: 700;
@@ -501,12 +449,12 @@ aside.myst-sidebar-left a[href*="openmic"]::before {
 }
 
 /* Bold "COMMUNITY MUSIC" label + divider above the Open Mic link */
-.myst-primary-sidebar-toc a[href="/openmic"] {
+nav[aria-label="Table of Contents"] a[href="/openmic"] {
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px solid #d1d5db;
 }
-.myst-primary-sidebar-toc a[href="/openmic"]::before {
+nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
   content: "COMMUNITY MUSIC";
   display: block;
   font-weight: 700;
