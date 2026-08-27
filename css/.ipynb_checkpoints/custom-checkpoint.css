@@ -435,3 +435,13 @@ footer .myst-footer-branding {
   opacity: 0.6;
   font-size: 0.85rem;
 }
+
+/* =========================================================
+   index 
+   ========================================================= */
+
+nav a[href*="openmic"] {
+  border-top: 1px solid #cccccc;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+}
