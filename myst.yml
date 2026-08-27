@@ -12,12 +12,12 @@ project:
     - file: performances
     - file: contact
     - file: openmic
-      title: COMMUNITY MUSIC
-    - title: COMMUNITY MUSIC
-      children:
-        - file: openmic
-          title: CBArt Studios Open Mic      
 
+    - file:  openmic
+    title: COMMUNITY MUSIC
+     - file: openmic
+    title: CBArt Studios Open Mic
+     
 site:
   template: book-theme
   url: https://lescatherines.github.io
