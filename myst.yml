@@ -15,7 +15,7 @@ project:
     - file: contact
       title: Stay Connected 
     - file: openmic
-      title: CBart Studios Open Mic
+      title: CBArt Studios Open Mic
 site:
   template: book-theme
   url: https://lescatherines.github.io
