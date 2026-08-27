@@ -433,34 +433,29 @@ footer .myst-footer-branding {
   opacity: 0.6;
   font-size: 0.85rem;
 }
-Replace it with:
-
 /* =========================================================
    COMMUNITY MUSIC NAVIGATION
    ========================================================= */
 
-/*
-  The Open Mic remains the only real navigation link.
-  "COMMUNITY MUSIC" is inserted visually above it.
-*/
-
+/* Open Mic navigation item: separator starts a new section */
 aside.myst-sidebar-left li:has(a[href*="/openmic"]) {
   margin-top: 0.9rem !important;
   padding-top: 0.9rem !important;
   border-top: 1px solid #cccccc;
 }
 
-/* Non-clickable section heading */
+/* Non-clickable COMMUNITY MUSIC section heading */
 aside.myst-sidebar-left li:has(a[href*="/openmic"])::before {
   content: "COMMUNITY MUSIC";
   display: block;
-  margin-bottom: 0.7rem;
+  margin-left: -0.75rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
   color: #355c7d;
   line-height: 1.4;
 }
 
-/* Keep the actual Open Mic link normal weight */
+/* Open Mic is a normal indented page link */
 aside.myst-sidebar-left li:has(a[href*="/openmic"]) a {
   font-weight: 500;
 }
