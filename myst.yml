@@ -10,8 +10,11 @@ project:
   toc:
     - file: index
     - file: about
+      title: About us 
     - file: performances
+      title: Live Performances
     - file: contact
+      title: Stay connected  
     - file: openmic
 
       
