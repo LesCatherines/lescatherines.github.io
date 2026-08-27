@@ -437,25 +437,36 @@ footer .myst-footer-branding {
    COMMUNITY MUSIC NAVIGATION
    ========================================================= */
 
-/* Open Mic navigation item: separator starts a new section */
-aside.myst-sidebar-left li:has(a[href*="/openmic"]) {
-  margin-top: 0.9rem !important;
-  padding-top: 0.9rem !important;
+/* Indent normal navigation links */
+aside.myst-sidebar-left a {
+  font-weight: 500;
+  margin-left: 0.8rem;
+}
+
+/* Start a new section before the Open Mic link */
+aside.myst-sidebar-left a[href*="openmic"] {
+  position: relative;
+  margin-top: 3.2rem !important;
+}
+
+/* Divider above COMMUNITY MUSIC */
+aside.myst-sidebar-left a[href*="openmic"]::before {
+  content: "";
+  position: absolute;
+  left: -0.8rem;
+  right: 0;
+  top: -1.7rem;
   border-top: 1px solid #cccccc;
 }
 
-/* Non-clickable COMMUNITY MUSIC section heading */
-aside.myst-sidebar-left li:has(a[href*="/openmic"])::before {
+/* COMMUNITY MUSIC section heading */
+aside.myst-sidebar-left a[href*="openmic"]::after {
   content: "COMMUNITY MUSIC";
-  display: block;
-  margin-left: -0.75rem;
-  margin-bottom: 0.5rem;
+  position: absolute;
+  left: -0.8rem;
+  top: -1.35rem;
+  transform: translateY(-100%);
   font-weight: 700;
   color: #355c7d;
-  line-height: 1.4;
-}
-
-/* Open Mic is a normal indented page link */
-aside.myst-sidebar-left li:has(a[href*="/openmic"]) a {
-  font-weight: 500;
+  white-space: nowrap;
 }
