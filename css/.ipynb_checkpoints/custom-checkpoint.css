@@ -48,12 +48,10 @@ header {
    ========================================================= */
 
 /* Left nav: light polish only */
-aside.myst-sidebar-left {
-  font-size: 0.95rem;
-}
 
 aside.myst-sidebar-left a {
   font-weight: 500;
+  margin-left: 0.75rem;
 }
 
 /* Remove right page outline ("Contents") */
@@ -363,10 +361,6 @@ a.button:hover {
    CARDS
    ========================================================= */
 
-/* =========================================================
-   CARD — ULTRA TIGHT
-   ========================================================= */
-
 .sd-card {
   padding: 4px 10px !important;
   margin: 6px 0 !important;
@@ -436,12 +430,43 @@ footer .myst-footer-branding {
   font-size: 0.85rem;
 }
 
+
 /* =========================================================
-   index 
+   SIDEBAR SECTION HEADERS
    ========================================================= */
 
-nav a[href*="openmic"] {
-  border-top: 1px solid #cccccc;
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
+/* "LES CATHERINES" — real Home link, kept clickable and
+   styled as the section header for About/Performances/Contact */
+nav[aria-label="Table of Contents"] a[href="/"] {
+  font-weight: 700 !important;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 0.5rem 0.4rem;
+  margin-top: 1rem;
+}
+
+/* Indent the sub-pages under it, plus the Open Mic page */
+nav[aria-label="Table of Contents"] a[href="/about"],
+nav[aria-label="Table of Contents"] a[href="/performances"],
+nav[aria-label="Table of Contents"] a[href="/contact"],
+nav[aria-label="Table of Contents"] a[href="/openmic"] {
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* "COMMUNITY MUSIC" — single page, single clickable link,
+   with a bold label stacked above its own link text */
+nav[aria-label="Table of Contents"] a[href="/openmic"] {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d1d5db;
+}
+nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
+  content: "COMMUNITY MUSIC";
+  display: block;
+  margin-left: -1.25rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.5rem 0.4rem;
 }
