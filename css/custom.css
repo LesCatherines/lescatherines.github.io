@@ -441,20 +441,32 @@ nav[aria-label="Table of Contents"] a[href="/"] {
   display: none;
 }
 
-/* Bold "LES CATHERINES" label above the About link */
+/* Indent the four sub-links (About us, Live Performances,
+   Stay connected, CBArt Studios Open Mic) and make them
+   slightly smaller than the section headers */
+nav[aria-label="Table of Contents"] a[href="/about"],
+nav[aria-label="Table of Contents"] a[href="/performances"],
+nav[aria-label="Table of Contents"] a[href="/contact"],
+nav[aria-label="Table of Contents"] a[href="/openmic"] {
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* "LES CATHERINES" section header: flush left, larger, bold */
 nav[aria-label="Table of Contents"] a[href="/about"] {
   margin-top: 1rem;
 }
 nav[aria-label="Table of Contents"] a[href="/about"]::before {
   content: "LES CATHERINES";
   display: block;
+  margin-left: -1.25rem;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   letter-spacing: 0.03em;
   padding: 0.5rem 0.5rem 0.4rem;
 }
 
-/* Bold "COMMUNITY MUSIC" label + divider above the Open Mic link */
+/* "COMMUNITY MUSIC" section header: flush left, larger, bold, with divider */
 nav[aria-label="Table of Contents"] a[href="/openmic"] {
   margin-top: 1.5rem;
   padding-top: 1rem;
@@ -463,8 +475,9 @@ nav[aria-label="Table of Contents"] a[href="/openmic"] {
 nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
   content: "COMMUNITY MUSIC";
   display: block;
+  margin-left: -1.25rem;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   letter-spacing: 0.03em;
   padding: 0.25rem 0.5rem 0.4rem;
 }
