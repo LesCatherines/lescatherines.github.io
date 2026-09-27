@@ -471,3 +471,19 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
   padding: 0.25rem 0.5rem 0.4rem;
 }
 
+/* ==========================================
+   HORIZONTAL NAVIGATION — BAND IDENTITY
+   ========================================== */
+
+/* Highlight the homepage link in the header */
+header a[href="/"] {
+  color: #355c7d !important;
+  font-size: 1.15rem !important;
+  font-weight: 750 !important;
+  letter-spacing: 0.035em;
+}
+
+/* Keep the band name visually distinct on hover */
+header a[href="/"]:hover {
+  color: #243b53 !important;
+}
