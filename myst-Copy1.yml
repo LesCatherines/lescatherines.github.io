@@ -4,30 +4,25 @@ version: 1
 project:
   id: 5c919598-ad6e-4dc7-a5be-858a8fd6d0b0
   title: LES CATHERINES
-  description: Acoustic trio.
+  description: Acoustic trio. 
   thumbnail: ./images/The-Catherines-logo.png
 
   toc:
     - file: index
     - file: about
-      title: About us
+      title: About us 
     - file: performances
       title: Live Performances
     - file: contact
-      title: Stay connected
+      title: Stay connected  
     - file: openmic
       title: CBArt Studios Open Mic
 
+      
 site:
   template: book-theme
   url: https://lescatherines.github.io
   baseurl: /
-
   options:
     style: ./css/custom.css
     footer_text: "© Les Catherines"
-    hide_footer_links: true
-    hide_outline: true
-
-  parts:
-    primary_sidebar_footer: sidebar-footer.md
