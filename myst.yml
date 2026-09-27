@@ -23,7 +23,7 @@ site:
   baseurl: /
 
   nav:
-    - title: Home
+    - title: LES CATHERINES
       url: /
     - title: About Us
       url: /about
@@ -31,10 +31,10 @@ site:
       url: /performances
     - title: Stay Connected
       url: /contact
-    - title: Community Music
+    - title: COMMUNITY MUSIC
       children:
         - title: CBArt Studios Open Mic
-          url: /openmic
+          url: /openmic          
 
   options:
     style: ./css/custom.css
