@@ -1,3 +1,4 @@
+# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 
 project:
@@ -22,26 +23,11 @@ site:
   url: https://lescatherines.github.io
   baseurl: /
 
-  nav:
-    - title: Home
-      url: /
-    - title: About Us
-      url: /about
-    - title: Live Performances
-      url: /performances
-    - title: Stay Connected
-      url: /contact
-    - title: Community Music
-      children:
-        - title: CBArt Studios Open Mic
-          url: /openmic
-
   options:
     style: ./css/custom.css
     footer_text: "© Les Catherines"
-    hide_toc: true
-    hide_outline: true
     hide_footer_links: true
+    hide_outline: true
 
   parts:
     primary_sidebar_footer: sidebar-footer.md

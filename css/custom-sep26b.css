@@ -1,0 +1,473 @@
+/* =========================================================
+   GLOBAL TYPOGRAPHY & LAYOUT
+   ========================================================= */
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  background: #faf8f4;
+  color: #24303f;
+  line-height: 1.65;
+}
+
+/* Main content width (editorial, not docs) */
+.myst-content {
+  max-width: 980px !important;
+}
+
+/* =========================================================
+   HEADER CLEANUP
+   ========================================================= */
+
+/* Hide "Made with MyST" badge */
+span.tracking-tight.sm\:mr-5 {
+  display: none !important;
+}
+
+/* Remove announcement/header bars */
+.myst-banner,
+.myst-topbar,
+.myst-announcement {
+  display: none !important;
+}
+
+/* Remove extra header padding */
+header {
+  padding-top: 0 !important;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+/* Left nav: light polish only */
+
+aside.myst-sidebar-left a {
+  font-weight: 500;
+  margin-left: 0.75rem;
+}
+
+/* Remove right page outline ("Contents") */
+.myst-outline,
+.myst-outline-header {
+  display: none !important;
+}
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+/* Page title */
+.myst-content h1,
+.prose h1,
+.myst-content .prose h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #1f2a37;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Section headers */
+.myst-content h2 {
+  font-size: 1.7rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.myst-content h3 {
+  font-size: 1.2rem;
+  font-weight: 650;
+  color: #334e68;
+}
+
+/* Small inline heading polish */
+h1 img,
+h2 img {
+  margin-right: 0.4rem;
+}
+
+
+/* =========================================================
+   H1 / PAGE TITLE SPACING
+   ========================================================= */
+
+/* Section wrapper around H1 */
+.myst-content section:has(> h1) {
+  margin-bottom: 0.35rem !important;
+  padding-bottom: 0 !important;
+}
+
+/* First element after H1 */
+.myst-content h1 + p,
+.myst-content h1 + h2,
+.myst-content h1 + hr {
+  margin-top: 0.15rem !important;
+}
+
+/* Tighten first paragraph after H1 when no hr */
+.prose h1 + p,
+.myst-content h1 + p {
+  margin-top: 0.25rem !important;
+}
+
+/* Tighten hr directly after H1 */
+.prose h1 + hr,
+.myst-content h1 + hr {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* Tighten spacing before H2 after hr */
+.prose hr + h2,
+.myst-content hr + h2 {
+  margin-top: 0.6rem !important;
+}
+
+
+/* =========================================================
+   MyST FRONTMATTER TITLE SPACING
+   ========================================================= */
+
+/* Title block itself */
+.myst-fm-block-title,
+h1.myst-fm-block-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Element immediately after title */
+.myst-fm-block-title + * {
+  margin-top: 0.4rem !important;
+}
+
+h1.myst-fm-block-title + * {
+  margin-top: 0.15rem !important;
+  padding-top: 0 !important;
+}
+
+/* Special case: hr after title */
+.myst-fm-block-title + hr,
+h1.myst-fm-block-title + hr,
+.myst-content hr {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Special case: h2 after title */
+.myst-fm-block-title + h2 {
+  margin-top: 0.5rem !important;
+}
+
+/* If title sits in a flex/grid stack with gap, remove it */
+*:has(> h1.myst-fm-block-title) {
+  row-gap: 0 !important;
+  gap: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   DIVIDERS
+   ========================================================= */
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd6cc;
+  margin: 2.4rem 0;
+}
+
+
+/* =========================================================
+   TEXT & LISTS
+   ========================================================= */
+
+p {
+  margin: 0.7rem 0;
+}
+
+ul {
+  padding-left: 1.4rem;
+}
+
+ul li {
+  margin: 0.4rem 0;
+}
+
+ul li::marker {
+  color: #9ca3af;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+  color: #355c7d;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+a:hover {
+  color: #243b53;
+  border-bottom-color: currentColor;
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+
+/* Reset any theme styling */
+html body blockquote,
+html body blockquote * {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Build clean testimonial */
+html body blockquote {
+  margin: 1.2rem 0 0.3rem 0 !important;
+  padding: 0.9rem 1rem !important;
+  border-left: 4px solid #355c7d !important;
+  border-radius: 12px !important;
+  background: #f5f1ea !important;
+}
+
+html body blockquote p {
+  font-style: italic !important;
+  line-height: 1.5 !important;
+  font-size: 1.03rem !important;
+  color: #334155 !important;
+}
+
+/* Attribution paragraph after testimonial */
+html body blockquote + p {
+  margin-top: 0.15rem !important;
+  margin-bottom: 0.9rem !important;
+  font-style: normal !important;
+  font-size: 0.93rem !important;
+  color: #555 !important;
+}
+
+
+/* =========================================================
+   ABOUT PAGE IMAGES + RESPONSIVE GRID
+   ========================================================= */
+
+.about-photo {
+  display: block;
+  max-width: 240px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+/* =========================================================
+   PERFORMANCES GRID
+   ========================================================= */
+
+.performances-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  align-items: center;
+}
+
+/* Let performance photo use the wider column */
+.performances-grid .about-photo {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* Stack text and photo on smaller screens */
+@media (max-width: 768px) {
+  .performances-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .performances-grid .about-photo {
+    margin: 0 auto;
+  }
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.button,
+a.button {
+  display: inline-block;
+  background: #355c7d;
+  color: #ffffff !important;
+  padding: 0.72rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: none;
+  box-shadow: 0 6px 18px rgba(53, 92, 125, 0.18);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.button:hover,
+a.button:hover {
+  background: #2d4d68;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(53, 92, 125, 0.22);
+  border-bottom-color: transparent !important;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.sd-card {
+  padding: 4px 10px !important;
+  margin: 6px 0 !important;
+  border-radius: 10px;
+}
+
+/* Remove ALL internal padding layers */
+.sd-card-body,
+.sd-card-body > div {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Kill spacing before FIRST element */
+.sd-card-body > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Kill spacing after LAST element */
+.sd-card-body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Headings inside cards */
+.sd-card h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2;
+}
+
+/* Paragraphs / lists inside cards */
+.sd-card p,
+.sd-card ul {
+  margin: 0.2rem 0 !important;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  text-align: center;
+  padding: 3rem 0 2.2rem 0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #5b6673;
+  max-width: 700px;
+  margin: 0.7rem auto 1.2rem auto;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+footer .myst-footer-branding {
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   SIDEBAR SECTION HEADERS
+   ========================================================= */
+
+/* "LES CATHERINES" — real Home link, kept clickable and
+   styled as the section header for About/Performances/Contact */
+nav[aria-label="Table of Contents"] a[href="/"] {
+  font-weight: 700 !important;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 0.5rem 0.4rem;
+  margin-top: 1rem;
+}
+
+/* Indent the sub-pages under it, plus the Open Mic page */
+nav[aria-label="Table of Contents"] a[href="/about"],
+nav[aria-label="Table of Contents"] a[href="/performances"],
+nav[aria-label="Table of Contents"] a[href="/contact"],
+nav[aria-label="Table of Contents"] a[href="/openmic"] {
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* "COMMUNITY MUSIC" — single page, single clickable link,
+   with a bold label stacked above its own link text */
+nav[aria-label="Table of Contents"] a[href="/openmic"] {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d1d5db;
+}
+nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
+  content: "COMMUNITY MUSIC";
+  display: block;
+  margin-left: -1.25rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.5rem 0.4rem;
+}
+
