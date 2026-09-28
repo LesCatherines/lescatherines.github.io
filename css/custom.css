@@ -512,10 +512,3 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
     white-space: nowrap;
   }
 }
-
-/* Hide MyST search */
-.myst-search,
-button[aria-label="Search"],
-button[aria-label="Open Search"] {
-  display: none !important;
-}
