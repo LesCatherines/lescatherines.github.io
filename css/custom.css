@@ -513,10 +513,7 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
   }
 }
 
-/* Hide MyST page download button */
-.myst-content button[title*="Download"],
-.myst-content a[title*="Download"],
-button[aria-label*="Download"],
-a[aria-label*="Download"] {
+/* Hide MyST download button */
+.myst-fm-downloads-button {
   display: none !important;
 }
