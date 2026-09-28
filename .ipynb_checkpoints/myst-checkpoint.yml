@@ -26,6 +26,8 @@ site:
   nav:
     - title: LES CATHERINES
       url: https://lescatherines.github.io/
+    - title: Home
+      url: /index
     - title: About Us
       url: /about
     - title: Live Performances
