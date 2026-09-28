@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
 /* =========================================================
    GLOBAL TYPOGRAPHY & LAYOUT
    ========================================================= */
@@ -515,4 +517,31 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
 /* Hide MyST download button */
 .myst-fm-downloads-button {
   display: none !important;
+}
+
+/* TYPOGRAPHY EXPERIMENT:
+   Serif headings, existing sans-serif body */
+
+.myst-content h1,
+.myst-content h2,
+.myst-content h3,
+.prose h1,
+.prose h2,
+.prose h3 {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+}
+
+/* Main page titles */
+.myst-content h1,
+.prose h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+/* Section headings */
+.myst-content h2,
+.prose h2 {
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
