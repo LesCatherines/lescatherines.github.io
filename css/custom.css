@@ -471,35 +471,31 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
   padding: 0.25rem 0.5rem 0.4rem;
 }
 /* ==========================================
-   LES CATHERINES — TWO-ROW HEADER
+   LES CATHERINES — SINGLE-ROW HEADER
    ========================================== */
 
 @media (min-width: 1024px) {
 
-  /* Arrange the four navigation links */
+  /* Arrange navigation horizontally */
   .flex-grow.hidden.lg\:block:has(
     > .myst-top-nav-item:nth-child(4)
   ) {
-    display: grid !important;
-    grid-template-columns: max-content max-content max-content;
-    grid-template-rows: auto auto;
-    column-gap: 1.5rem;
-    row-gap: 0.65rem;
+    display: flex !important;
     align-items: center;
-    justify-content: start;
+    width: 100%;
+    gap: 1.5rem;
   }
 
-  /* Remove MyST's default navigation margins */
+  /* Remove default margins */
   .flex-grow.hidden.lg\:block > .myst-top-nav-item,
   .flex-grow.hidden.lg\:block > .myst-top-nav-item > a {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
 
-  /* LES CATHERINES: clickable homepage link */
+  /* Clickable band name on the left */
   .flex-grow.hidden.lg\:block > .myst-top-nav-item:first-child {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    margin-right: auto !important;
   }
 
   .flex-grow.hidden.lg\:block > .myst-top-nav-item:first-child > a {
@@ -507,22 +503,12 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
     font-size: 1.15rem !important;
     font-weight: 750 !important;
     letter-spacing: 0.035em;
+    white-space: nowrap;
     border-bottom: none !important;
   }
 
-  /* Three links underneath the band name */
-  .flex-grow.hidden.lg\:block > .myst-top-nav-item:nth-child(2) {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .flex-grow.hidden.lg\:block > .myst-top-nav-item:nth-child(3) {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .flex-grow.hidden.lg\:block > .myst-top-nav-item:nth-child(4) {
-    grid-column: 3;
-    grid-row: 2;
+  /* Keep the other navigation links on one line */
+  .flex-grow.hidden.lg\:block > .myst-top-nav-item:not(:first-child) {
+    white-space: nowrap;
   }
 }
