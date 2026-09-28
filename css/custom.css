@@ -512,3 +512,11 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
     white-space: nowrap;
   }
 }
+
+/* Hide MyST page download button */
+.myst-content button[title*="Download"],
+.myst-content a[title*="Download"],
+button[aria-label*="Download"],
+a[aria-label*="Download"] {
+  display: none !important;
+}
