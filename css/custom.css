@@ -545,3 +545,14 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+
+/* TEST: Libre Baskerville headings */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+h1,
+h2,
+h3,
+h1.myst-fm-block-title {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+}
