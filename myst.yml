@@ -24,16 +24,14 @@ site:
   baseurl: /
 
   nav:
+    - title: LES CATHERINES
+      url: https://lescatherines.github.io/
     - title: About Us
       url: /about
     - title: Live Performances
       url: /performances
     - title: Stay Connected
       url: /contact
-    - title: COMMUNITY MUSIC
-      children:
-        - title: CBArt Studios Open Mic
-          url: /openmic
 
   options:
     style: ./css/custom.css
