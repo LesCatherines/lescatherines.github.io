@@ -43,6 +43,7 @@ site:
     hide_toc: true
     hide_outline: true
     hide_footer_links: true
+    hide_search: true
 
   parts:
     primary_sidebar_footer: sidebar-footer.md
