@@ -21,9 +21,6 @@ site:
   template: book-theme
   url: https://lescatherines.github.io
   baseurl: /
-  logo_text: "LES CATHERINES"
-  logo_url: /
-
   nav:
     - title: About Us
       url: /about
@@ -36,6 +33,8 @@ site:
         - title: CBArt Studios Open Mic
           url: /openmic
   options:
+    logo_text: "LES CATHERINES"
+    logo_url: /
     style: ./css/custom.css
     footer_text: "© Les Catherines"
     hide_toc: true
