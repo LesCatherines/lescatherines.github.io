@@ -493,11 +493,10 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
     margin-right: 0 !important;
   }
 
-  /* Clickable band name on the left */
-  .flex-grow.hidden.lg\:block > .myst-top-nav-item:first-child {
-    margin-right: auto !important;
-  }
-
+/* Keep all navigation links together on the left */
+.flex-grow.hidden.lg\:block > .myst-top-nav-item:first-child {
+  margin-right: 1.5rem !important;
+}
   .flex-grow.hidden.lg\:block > .myst-top-nav-item:first-child > a {
     color: #355c7d !important;
     font-size: 1.15rem !important;
