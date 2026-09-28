@@ -42,7 +42,7 @@ site:
     footer_text: "© Les Catherines"
     hide_toc: true
     hide_outline: true
-    hide_footer_links: true
+    hide_footer_links: false
     hide_search: true
 
   parts:
