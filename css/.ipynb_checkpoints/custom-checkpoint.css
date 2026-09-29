@@ -190,6 +190,11 @@ hr {
   margin: 2.4rem 0;
 }
 
+/* Section heading after divider */
+.prose hr + h2,
+.myst-content hr + h2 {
+  margin-top: 1rem !important;
+}
 
 /* =========================================================
    TEXT & LISTS
