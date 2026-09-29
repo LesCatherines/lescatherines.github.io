@@ -24,15 +24,6 @@ body {
 }
 
 
-/* Wider main content on desktop */
-@media (min-width: 1100px) {
-  article.article-grid {
-    grid-template-columns:
-      minmax(0, 1fr)
-      minmax(0, 1000px)
-      minmax(0, 1fr) !important;
-  }
-}
 /* =========================================================
    HEADER CLEANUP
    ========================================================= */
