@@ -115,10 +115,12 @@ h2 img {
   margin-top: 0.15rem !important;
 }
 
-/* Tighten first paragraph after H1 when no hr */
+
+
+/* First paragraph after page title */
 .prose h1 + p,
 .myst-content h1 + p {
-  margin-top: 0.25rem !important;
+  margin-top: 0.5rem !important;
 }
 
 /* Tighten hr directly after H1 */
