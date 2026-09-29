@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 /* =========================================================
    GLOBAL TYPOGRAPHY & LAYOUT
@@ -546,13 +545,3 @@ nav[aria-label="Table of Contents"] a[href="/openmic"]::before {
   line-height: 1.4;
 }
 
-/* TEST: Libre Baskerville headings */
-
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
-
-h1,
-h2,
-h3,
-h1.myst-fm-block-title {
-  font-family: "Libre Baskerville", Georgia, serif !important;
-}
