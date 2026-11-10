@@ -31,11 +31,11 @@ jobs:
       - name: Install MyST
         run: pip install mystmd
         
-      - name: Add Google verification file
-        run: cp google01ce000260828be3.html _build/html/        
-
       - name: Build site
         run: myst build --html
+        
+      - name: Add Google verification file
+        run: cp google01ce000260828be3.html _build/html/    
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
